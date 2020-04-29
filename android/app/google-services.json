@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "2919801365",
+    "firebase_url": "https://demoapp-2d551.firebaseio.com",
+    "project_id": "demoapp-2d551",
+    "storage_bucket": "demoapp-2d551.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2919801365:android:6751de0d540ec14fd4241c",
+        "android_client_info": {
+          "package_name": "com.example.chat2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2919801365-5sjnd70226etaak7jp7n85e32hhn00nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chat2",
+            "certificate_hash": "5a278ecf4773d003865d9775f3581e73cc0274c1"
+          }
+        },
+        {
+          "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWkECyC8hdy1TPQ3FaBSqUsRCYIkJIVvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2919801365:android:8eac2545285f3020d4241c",
+        "android_client_info": {
+          "package_name": "com.teekam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2919801365-v18bn302nanpgm2foi53nqsboc093uv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teekam",
+            "certificate_hash": "5a278ecf4773d003865d9775f3581e73cc0274c1"
+          }
+        },
+        {
+          "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWkECyC8hdy1TPQ3FaBSqUsRCYIkJIVvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2919801365:android:cd13b2fb00d67318d4241c",
+        "android_client_info": {
+          "package_name": "com.teekam.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2919801365-jq3gdu7abadahhvh5ocl1ug07od3led5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teekam.chat",
+            "certificate_hash": "5a278ecf4773d003865d9775f3581e73cc0274c1"
+          }
+        },
+        {
+          "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWkECyC8hdy1TPQ3FaBSqUsRCYIkJIVvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2919801365:android:5408f16224dba25cd4241c",
+        "android_client_info": {
+          "package_name": "teekam.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2919801365-v1v662q2p3iqrlojg4ir7g43vh31f95h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teekam.demo",
+            "certificate_hash": "5a278ecf4773d003865d9775f3581e73cc0274c1"
+          }
+        },
+        {
+          "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWkECyC8hdy1TPQ3FaBSqUsRCYIkJIVvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2919801365-ec34s7kc6bsemvbfnql6b48556tmulok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
