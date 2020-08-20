@@ -1,7 +1,9 @@
-import 'package:chat2/Chat/Home.dart';
+
+import 'package:YouChat/Screens/Login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:YouChat/Screens/CustomBtn.dart';
 
 class Reset extends StatefulWidget {
   @override
@@ -15,7 +17,7 @@ class _ResetState extends State<Reset> {
   Future<void> resetPassword(String email) async {
     await _firebaseAuth.sendPasswordResetEmail(email: email);
     Fluttertoast.showToast(msg: "Password reset mail sent successfully!!");
-    Navigator.of(context).push(new MaterialPageRoute(builder: (context) => Home(),));
+    Navigator.of(context).push(new MaterialPageRoute(builder: (context) => LoginPage(),));
 }
 
   @override
@@ -23,14 +25,7 @@ class _ResetState extends State<Reset> {
     return Scaffold(
       appBar:AppBar(
         title: Text("Reset Password"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {
-              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => Home(),));
-            },
-          )
-        ],
+        
       ),
       body: Column(
         children:<Widget>[

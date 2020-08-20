@@ -1,6 +1,6 @@
 {
-    "name": "chat2",
-    "short_name": "chat2",
+    "name": "YouChat",
+    "short_name": "YouChat",
     "start_url": ".",
     "display": "minimal-ui",
     "background_color": "#0175C2",

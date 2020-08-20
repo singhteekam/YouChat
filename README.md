@@ -1,4 +1,4 @@
-# chat2
+# YouChat
 
 A new Flutter project.
 

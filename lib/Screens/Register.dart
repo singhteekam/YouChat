@@ -1,10 +1,11 @@
 
-import 'package:chat2/Chat/Home.dart';
-import 'package:chat2/Chat/Login.dart';
-import 'package:chat2/Chat/chatScreen.dart';
+import 'package:YouChat/Screens/CustomBtn.dart';
+import 'package:YouChat/Screens/Login.dart';
+import 'package:YouChat/Screens/chatScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -28,11 +29,10 @@ class _RegisterState extends State<Register> {
     );
     Fluttertoast.showToast(msg: "New account created");
 
-    Navigator.push(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(
         builder: (context) => Chat(
-          user: user,name: name,
         ),
       ),
     );
@@ -53,29 +53,21 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("YouChat"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {
-             Navigator.of(context).push(new MaterialPageRoute(builder: (context) => Home(),));
-            },
-          )
-        ],
-      ),
       body: SingleChildScrollView(
               child: Column(
           // mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Padding(padding: const EdgeInsets.only(top:50)),
-            // Text(_timeString,textAlign: TextAlign.center, style: TextStyle(fontSize: 14),),
-            // Text(_dateString,textAlign: TextAlign.center, style: TextStyle(fontSize: 14),),
-           
+           Padding(
+              padding:  EdgeInsets.only(top:MediaQuery.of(context).size.width*0.2,bottom:MediaQuery.of(context).size.width*0.2) ,
+              child: Text(
+                "YouChat",textScaleFactor: 5,
+                style: GoogleFonts.lobster()
+              ),
+            ),
+        
             Text("Sign Up",textAlign:TextAlign.center,
-              style:TextStyle(fontWeight: FontWeight.bold,fontSize: 40),),
-              Padding(padding: const EdgeInsets.only(top:10)),
+              style:TextStyle(fontSize: 40),),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
@@ -137,13 +129,25 @@ class _RegisterState extends State<Register> {
             ),
             Padding(padding: const EdgeInsets.only(top:5)),
             GestureDetector(
-             child: Text("Already have account?Login Here",textAlign: TextAlign.center, style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontSize: 20)),
+             child: Text("Already have an account?Login Here",textAlign: TextAlign.center, style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue,fontSize: 20)),
               onTap: () {
                 // do what you need to do when "Click here" gets clicked
-                Navigator.of(context).push(new MaterialPageRoute(builder: (context) => LoginPage(),));
+                Navigator.of(context).pushReplacement(new MaterialPageRoute(builder: (context) => LoginPage(),));
             }
             ),
-            Padding(padding: const EdgeInsets.only(top:1))
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Note: Please register yourself with valid email address to receive password reset emails.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+
           ],
         ),
       ),
