@@ -1,4 +1,4 @@
-import 'package:YouChat/Screens/Login.dart';
+import 'package:YouChat/Home/homeScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         //     Theme.of(context).textTheme,
         //   )
       ),
-      home: LoginPage(),
+      home: HomeScreen(),
     );
   }
 }
